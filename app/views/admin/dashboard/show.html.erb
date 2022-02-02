@@ -14,9 +14,11 @@
   </div>
 
   <div class="col-md-6">
-    <div class="panel panel-default">
-    <h2>Number of categories</h2>
-    <span><%= @categories_count %></span>
-    </div>
+    <%= link_to admin_categories_path do %>
+      <div class="panel panel-default">
+      <h2>Number of categories</h2>
+      <span><%= @categories_count %></span>
+      </div>
+    <% end %>
   </div>
 </section>
