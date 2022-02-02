@@ -1,0 +1,30 @@
+.admin-dashboard-show {
+  a {
+    text-decoration: none;
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 15px;
+    transition: all 0.25s ease-in;
+
+    h2 {
+      color:#286090;
+    }
+
+    span {
+      font-size: 36px;
+      font-weight: bold;
+      color: black;
+    }
+
+    &:hover {
+      box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+}
