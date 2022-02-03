@@ -1,6 +1,6 @@
 class Category < ActiveRecord::Base
 
-  has_many :products, dependent: :delete_all
+  has_many :products
 
   validates :name, presence: true
 end
