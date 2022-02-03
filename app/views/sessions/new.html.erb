@@ -3,11 +3,17 @@
     <h1>Login</h1>
   </header>
 
-  <%= form_for '/login' do |f| %>
-    <%= f.label :email %>
-    <%= f.text_field :email%>
-    <%= f.label :password %>
-    <%= f.password_field :password %>    
-    <%= f.submit "Login" %>
-  <% end %>
+  <div class="login-form">
+    <%= form_for '/login' do |f| %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.text_field :email, class: ['form-control']%>
+      </div>
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: ['form-control']%>
+      </div>    
+      <%= f.submit "Login", class: ['btn', 'btn-primary']%>
+    <% end %>
+  </div>
 </section>

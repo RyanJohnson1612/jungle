@@ -9,6 +9,7 @@
 // App
 @import "products";
 @import "about";
+@import "users";
 
 // Admin
 @import "admin/dashboard";
@@ -22,4 +23,5 @@ body {
 form.button_to {
   display: inline;
 }
+
 
