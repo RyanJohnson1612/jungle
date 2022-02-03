@@ -56,6 +56,9 @@
             <%= link_to 'Signup', :signup, class: ['btn btn-primary'] %>
           </li>
         <% else %>
+          <li class="current-user">
+            Logged in as: <%= User.find_by(id: session[:user_id]).first_name %> <%= User.find_by(id: session[:user_id]).last_name %>
+          </li>
           <li>
             <%= link_to 'Logout', :logout, class: ['btn btn-default'] %>
           </li>
