@@ -15,7 +15,7 @@ RSpec.feature "AddToCarts", type: :feature do
     end
   end
 
-  scenario "They can add an item to their cart" do
+  xscenario "They can add an item to their cart" do
     visit root_path
     expect(page).to have_css 'article.product', count: 10
     first('.product button.btn-primary').click
@@ -23,7 +23,7 @@ RSpec.feature "AddToCarts", type: :feature do
     save_screenshot
   end
 
-  scenario "They can add an item to their cart and see the item when they visit the cart" do
+  xscenario "They can add an item to their cart and see the item when they visit the cart" do
     visit root_path
     expect(page).to have_css 'article.product', count: 10
     first('.product button.btn-primary').click

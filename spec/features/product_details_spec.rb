@@ -16,7 +16,7 @@ RSpec.feature "ProductDetails", type: :feature do
     end
   end
 
-  scenario "They can navigate to a product page" do
+  xscenario "They can navigate to a product page" do
     visit root_path
 
     expect(page).to have_css 'article.product', count: 10
